@@ -1,0 +1,54 @@
+{
+    "name": "XRControls",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "195ee2a4-f6da-4113-9d59-6784ae5dabf4",
+            "actions": [
+                {
+                    "name": "KickLeft",
+                    "type": "Button",
+                    "id": "73ee13cf-38d3-4691-8731-f841ed7ae7b7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "KickRight",
+                    "type": "Button",
+                    "id": "dc3d88fb-48cc-4260-9498-7bed6518b2e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ad170f66-c777-44ed-8635-87ebfc45ecdc",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KickLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "175bfaf3-79f9-450f-bc47-2ef2554f93ea",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KickRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
