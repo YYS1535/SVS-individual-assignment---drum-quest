@@ -9,6 +9,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     private AudioSource source;
     private Vector3 originalScale; // Store once
     private Coroutine scaleRoutine;
+    public DrumTutorialManager activeTutorialManager; // Set from manager
 
     [Header("Tag of drumstick")]
     public string targetTag = "Drumstick";
@@ -66,6 +67,23 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         if (hitParticles != null)
         {
             hitParticles.Play();
+        }
+
+        if (activeTutorialManager != null)
+        {
+            DrumID id = GetComponent<DrumID>();
+            if (id != null)
+            {
+                string drumName = id.drumName;
+                float videoTime = (float)activeTutorialManager.GetCurrentVideoTime();
+
+                Debug.Log($"[Hit] Sending hit to TutorialManager: {drumName} at {videoTime:F2}s");
+                activeTutorialManager.RegisterHit(drumName, videoTime);
+            }
+            else
+            {
+                Debug.LogWarning($"DrumID not found on: {gameObject.name}");
+            }
         }
     }
 

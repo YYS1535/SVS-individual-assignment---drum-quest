@@ -1,0 +1,9 @@
+[
+  { "time": 2.0, "drum": "hi-hat" },
+  { "time": 2.5, "drum": "snare" },
+  { "time": 3.0, "drum": "hi-hat" },
+  { "time": 3.5, "drum": "kick" },
+  { "time": 4.0, "drum": "hi-hat" },
+  { "time": 4.5, "drum": "snare" },
+  { "time": 5.0, "drum": "crash" }
+]
