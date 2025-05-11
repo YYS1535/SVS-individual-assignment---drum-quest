@@ -1,0 +1,834 @@
+[
+  {
+    "time": 19.8,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 21.07,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 22.25,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 23.48,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 24.67,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 25.87,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 27.07,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 28.29,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 29.48,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 30.67,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 31.87,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 33.07,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 34.34,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 35.46,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 36.66,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 37.87,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 45.47,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 45.47,
+    "drum": "kick"
+  },
+  {
+    "time": 46.66,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 47.86,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 47.86,
+    "drum": "kick"
+  },
+  {
+    "time": 49.05,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 50.26,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 50.26,
+    "drum": "kick"
+  },
+  {
+    "time": 51.47,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 52.63,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 52.63,
+    "drum": "kick"
+  },
+  {
+    "time": 53.84,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 55.02,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 55.02,
+    "drum": "kick"
+  },
+  {
+    "time": 56.24,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 57.45,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 57.45,
+    "drum": "kick"
+  },
+  {
+    "time": 58.65,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 59.82,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 59.82,
+    "drum": "kick"
+  },
+  {
+    "time": 61.05,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 62.25,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 62.25,
+    "drum": "kick"
+  },
+  {
+    "time": 63.48,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 71.21,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 71.21,
+    "drum": "kick"
+  },
+  {
+    "time": 72.41,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 72.41,
+    "drum": "snare"
+  },
+  {
+    "time": 73.63,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 73.63,
+    "drum": "kick"
+  },
+  {
+    "time": 74.83,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 74.83,
+    "drum": "snare"
+  },
+  {
+    "time": 75.99,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 75.99,
+    "drum": "kick"
+  },
+  {
+    "time": 77.22,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 77.22,
+    "drum": "snare"
+  },
+  {
+    "time": 78.44,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 78.44,
+    "drum": "kick"
+  },
+  {
+    "time": 79.62,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 79.62,
+    "drum": "snare"
+  },
+  {
+    "time": 80.83,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 80.83,
+    "drum": "kick"
+  },
+  {
+    "time": 82.01,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 82.01,
+    "drum": "snare"
+  },
+  {
+    "time": 83.22,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 83.22,
+    "drum": "kick"
+  },
+  {
+    "time": 84.43,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 84.43,
+    "drum": "snare"
+  },
+  {
+    "time": 85.61,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 85.61,
+    "drum": "kick"
+  },
+  {
+    "time": 86.83,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 86.83,
+    "drum": "snare"
+  },
+  {
+    "time": 88.02,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 88.02,
+    "drum": "kick"
+  },
+  {
+    "time": 89.23,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 89.23,
+    "drum": "snare"
+  },
+  {
+    "time": 92.44,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 92.44,
+    "drum": "kick"
+  },
+  {
+    "time": 93.1,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 93.1,
+    "drum": "snare"
+  },
+  {
+    "time": 93.76,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 93.76,
+    "drum": "kick"
+  },
+  {
+    "time": 94.43,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 94.43,
+    "drum": "snare"
+  },
+  {
+    "time": 95.10,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 95.10,
+    "drum": "kick"
+  },
+  {
+    "time": 95.78,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 95.78,
+    "drum": "snare"
+  },
+  {
+    "time": 96.44,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 96.44,
+    "drum": "kick"
+  },
+  {
+    "time": 97.12,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 97.12,
+    "drum": "snare"
+  },
+  {
+    "time": 97.77,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 97.77,
+    "drum": "kick"
+  },
+  {
+    "time": 98.46,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 98.46,
+    "drum": "snare"
+  },
+  {
+    "time": 99.11,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 99.11,
+    "drum": "kick"
+  },
+  {
+    "time": 99.78,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 99.78,
+    "drum": "snare"
+  },
+  {
+    "time": 100.45,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 100.45,
+    "drum": "kick"
+  },
+  {
+    "time": 101.12,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 101.12,
+    "drum": "snare"
+  },
+  {
+    "time": 101.77,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 101.77,
+    "drum": "kick"
+  },
+  {
+    "time": 102.44,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 102.44,
+    "drum": "snare"
+  },
+  {
+    "time": 105.29,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 105.29,
+    "drum": "kick"
+  },
+  {
+    "time": 105.95,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 105.95,
+    "drum": "snare"
+  },
+  {
+    "time": 106.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 106.64,
+    "drum": "kick"
+  },
+  {
+    "time": 107.32,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 107.32,
+    "drum": "snare"
+  },
+  {
+    "time": 107.98,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 107.98,
+    "drum": "kick"
+  },
+  {
+    "time": 108.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 108.64,
+    "drum": "snare"
+  },
+  {
+    "time": 109.28,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 109.28,
+    "drum": "kick"
+  },
+  {
+    "time": 109.96,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 109.96,
+    "drum": "snare"
+  },
+  {
+    "time": 110.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 110.64,
+    "drum": "kick"
+  },
+  {
+    "time": 111.31,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 111.31,
+    "drum": "snare"
+  },
+  {
+    "time": 111.96,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 111.96,
+    "drum": "kick"
+  },
+  {
+    "time": 112.63,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 112.63,
+    "drum": "snare"
+  },
+  {
+    "time": 113.29,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 113.29,
+    "drum": "kick"
+  },
+  {
+    "time": 113.96,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 113.96,
+    "drum": "snare"
+  },
+  {
+    "time": 114.63,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 114.63,
+    "drum": "kick"
+  },
+  {
+    "time": 115.31,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 115.31,
+    "drum": "snare"
+  },
+  {
+    "time": 115.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 115.97,
+    "drum": "kick"
+  },
+  {
+    "time": 116.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 116.64,
+    "drum": "snare"
+  },
+  {
+    "time": 117.29,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 117.29,
+    "drum": "kick"
+  },
+  {
+    "time": 117.98,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 117.98,
+    "drum": "snare"
+  },
+  {
+    "time": 118.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 118.64,
+    "drum": "kick"
+  },
+  {
+    "time": 119.59,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 119.59,
+    "drum": "snare"
+  },
+  {
+    "time": 119.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 119.97,
+    "drum": "kick"
+  },
+  {
+    "time": 120.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 120.64,
+    "drum": "snare"
+  },
+  {
+    "time": 121.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 121.3,
+    "drum": "kick"
+  },
+  {
+    "time": 121.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 121.97,
+    "drum": "snare"
+  },
+  {
+    "time": 122.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 122.64,
+    "drum": "kick"
+  },
+  {
+    "time": 123.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 123.3,
+    "drum": "snare"
+  },
+  {
+    "time": 123.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 123.97,
+    "drum": "kick"
+  },
+  {
+    "time": 124.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 124.64,
+    "drum": "snare"
+  },
+  {
+    "time": 125.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 125.3,
+    "drum": "kick"
+  },
+  {
+    "time": 125.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 125.97,
+    "drum": "snare"
+  },
+  {
+    "time": 126.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 126.64,
+    "drum": "kick"
+  },
+  {
+    "time": 127.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 127.3,
+    "drum": "snare"
+  },
+  {
+    "time": 127.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 127.97,
+    "drum": "kick"
+  },
+  {
+    "time": 128.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 128.64,
+    "drum": "snare"
+  },
+  {
+    "time": 129.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 129.3,
+    "drum": "kick"
+  },
+  {
+    "time": 129.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 129.97,
+    "drum": "snare"
+  },
+  {
+    "time": 130.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 130.64,
+    "drum": "kick"
+  },
+  {
+    "time": 131.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 131.3,
+    "drum": "snare"
+  },
+  {
+    "time": 131.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 131.97,
+    "drum": "kick"
+  },
+  {
+    "time": 132.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 132.64,
+    "drum": "snare"
+  },
+  {
+    "time": 133.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 133.3,
+    "drum": "kick"
+  },
+  {
+    "time": 133.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 133.97,
+    "drum": "snare"
+  },
+  {
+    "time": 134.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 134.64,
+    "drum": "kick"
+  },
+  {
+    "time": 135.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 135.3,
+    "drum": "snare"
+  },
+  {
+    "time": 135.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 135.97,
+    "drum": "kick"
+  },
+  {
+    "time": 136.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 136.64,
+    "drum": "snare"
+  },
+  {
+    "time": 137.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 137.3,
+    "drum": "kick"
+  },
+  {
+    "time": 137.97,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 137.97,
+    "drum": "snare"
+  },
+  {
+    "time": 138.64,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 138.64,
+    "drum": "kick"
+  },
+  {
+    "time": 139.3,
+    "drum": "hi-hat"
+  },
+  {
+    "time": 139.3,
+    "drum": "snare"
+  }
+]

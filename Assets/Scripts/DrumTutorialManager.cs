@@ -31,6 +31,7 @@ public class DrumTutorialManager : MonoBehaviour
     public TextAsset hintJsonFile;
     public List<DrumRingMapping> ringMappings = new List<DrumRingMapping>();
     private Dictionary<string, DrumRingHighlighter> drumNameToRing = new Dictionary<string, DrumRingHighlighter>();
+    public DrumHitFeedbackManager feedbackManager; 
 
     public List<DrumHint> tutorialHints = new List<DrumHint>();
     public float acceptableHitWindow = 0.3f;
@@ -83,6 +84,11 @@ public class DrumTutorialManager : MonoBehaviour
         successfulHits = 0;
         isPaused = false;
 
+        foreach (var hint in tutorialHints)
+        {
+            hint.wasHit = false;
+        }
+
         if (hintRoutine != null)
             StopCoroutine(hintRoutine);
 
@@ -130,14 +136,23 @@ public class DrumTutorialManager : MonoBehaviour
     {
         foreach (var hint in tutorialHints)
         {
-            if (hint.drumName == drumName && !hint.wasHit &&
-                Mathf.Abs(hitTime - hint.time) <= acceptableHitWindow)
+            float delta = Mathf.Abs(hitTime - hint.time);
+
+            if (hint.drumName == drumName && !hint.wasHit && delta <= acceptableHitWindow)
             {
                 hint.wasHit = true;
                 successfulHits++;
-                break;
+
+                if (feedbackManager != null)
+                {
+                    feedbackManager.ShowFeedback("Nice!");
+                }
+                Debug.Log($"Registered HIT: {drumName} at {hitTime:F2}s (expected: {hint.time:F2}s, : {delta:F2}s)");
+                return;
             }
         }
+
+        Debug.Log($"Missed or too late: {drumName} at {hitTime:F2}s (window ±{acceptableHitWindow}s)");
     }
 
     public double GetCurrentVideoTime()
