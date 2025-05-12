@@ -19,16 +19,15 @@ public class PlaySongManager : MonoBehaviour
     public Button quitButton;
 
     [Header("Videos")]
-    public VideoClip[] songVideos; // Assign 6 video clips in Inspector
+    public VideoClip[] songVideos;
 
     private bool isDragging = false;
+    private bool isPrepared = false;
 
     void Start()
     {
-        // Initially show only song selection
         playAlongPanel.SetActive(false);
 
-        // Hook up buttons
         playButton.onClick.AddListener(PlayVideo);
         pauseButton.onClick.AddListener(PauseVideo);
         quitButton.onClick.AddListener(QuitSession);
@@ -44,30 +43,35 @@ public class PlaySongManager : MonoBehaviour
             return;
         }
 
-        // Activate the video player GameObject first!
+        videoPlayer.Stop();
+        videoPlayer.clip = songVideos[index];
         videoPlayer.gameObject.SetActive(true);
 
-        // Set the selected clip
-        videoPlayer.clip = songVideos[index];
+        isPrepared = false;
 
-        // Prepare and play
+        // Unsubscribe previous prepare listener to avoid stacking
+        videoPlayer.prepareCompleted -= OnVideoPrepared;
+        videoPlayer.prepareCompleted += OnVideoPrepared;
+
         videoPlayer.Prepare();
-        videoPlayer.prepareCompleted += (vp) =>
-        {
-            scrubSlider.minValue = 0;
-            scrubSlider.maxValue = (float)vp.length;
-            vp.Play();
-        };
-
-        // UI updates
         playAlongPanel.SetActive(true);
+    }
+
+    private void OnVideoPrepared(VideoPlayer vp)
+    {
+        scrubSlider.minValue = 0;
+        scrubSlider.maxValue = (float)vp.length;
+        scrubSlider.value = 0;
+
+        isPrepared = true;
+        vp.Play();
     }
 
     void Update()
     {
-        if (videoPlayer.isPrepared && !isDragging)
+        if (isPrepared && videoPlayer.isPlaying && !isDragging)
         {
-            scrubSlider.value = (float)videoPlayer.time;
+            scrubSlider.value = Mathf.Clamp((float)videoPlayer.time, 0, (float)videoPlayer.length);
         }
     }
 
@@ -79,15 +83,24 @@ public class PlaySongManager : MonoBehaviour
     public void OnScrubDragEnd()
     {
         isDragging = false;
-        videoPlayer.time = scrubSlider.value;
+        SeekTo(scrubSlider.value);
     }
 
     public void OnScrubValueChanged(float value)
     {
         if (isDragging)
         {
-            videoPlayer.time = value;
+            SeekTo(value);
         }
+    }
+
+    private void SeekTo(float time)
+    {
+        if (!isPrepared) return;
+
+        time = Mathf.Clamp(time, 0, (float)videoPlayer.length);
+        videoPlayer.time = time;
+        Debug.Log($"Seeked to: {time:F2}s");
     }
 
     public void PlayVideo() => videoPlayer.Play();
@@ -98,13 +111,13 @@ public class PlaySongManager : MonoBehaviour
     {
         videoPlayer.Stop();
         videoPlayer.clip = null;
+        isPrepared = false;
 
         playAlongPanel.SetActive(false);
     }
 
     private void OnVideoEnded(VideoPlayer vp)
     {
-        // Optionally reset slider
-        scrubSlider.value = 0;
+        scrubSlider.value = scrubSlider.maxValue;
     }
 }

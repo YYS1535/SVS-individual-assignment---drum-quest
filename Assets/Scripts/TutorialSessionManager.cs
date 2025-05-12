@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class TutorialSessionManager : MonoBehaviour
@@ -57,6 +59,7 @@ public class TutorialSessionManager : MonoBehaviour
         tutorialVideos[index].Play();
         tutorialHintManagers[index].StartTutorial(tutorialVideos[index]);
         AssignActiveTutorialManagerToAllDrums(tutorialHintManagers[index]);
+        AssignActiveTutorialManagerToAllKicks(tutorialHintManagers[index]);
     }
 
     public void PauseTutorial()
@@ -79,6 +82,7 @@ public class TutorialSessionManager : MonoBehaviour
         tutorialVideos[currentTutorialIndex].Stop();
         tutorialHintManagers[currentTutorialIndex].QuitTutorial();
         AssignActiveTutorialManagerToAllDrums(null);
+        AssignActiveTutorialManagerToAllKicks(null);
 
         VideoPanel.SetActive(false);
         VideoController.SetActive(false);
@@ -135,6 +139,15 @@ public class TutorialSessionManager : MonoBehaviour
         }
     }
 
+    public void AssignActiveTutorialManagerToAllKicks(DrumTutorialManager activeManager)
+    {
+        KickDrumTrigger[] allKicks = FindObjectsOfType<KickDrumTrigger>();
+        foreach (var kick in allKicks)
+        {
+            kick.activeTutorialManager = activeManager;
+        }
+    }
+
     // Button helper methods
     public void ReplayCurrentTutorial() => StartTutorial(currentTutorialIndex);
     public void PlayNextTutorial() => StartTutorial(currentTutorialIndex + 1);
@@ -142,4 +155,9 @@ public class TutorialSessionManager : MonoBehaviour
     public void StartTutorialTwo() => StartTutorial(1);
     public void StartTutorialThree() => StartTutorial(2);
     public void StartTutorialFour() => StartTutorial(3);
+
+    public void QuitToMenu()
+    {
+        SceneManager.LoadScene("Home Page");
+    }
 }

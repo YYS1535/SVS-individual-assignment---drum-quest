@@ -12,7 +12,7 @@ public class KickDrumTrigger : MonoBehaviour
     public float scaleDuration = 0.1f;
 
     public XRControls controls; // Replace with your generated input class
-
+    public DrumTutorialManager activeTutorialManager; // Reference set by TutorialSessionManager
     private Vector3 originalScale;
     private Coroutine scaleCoroutine;
 
@@ -44,41 +44,56 @@ public class KickDrumTrigger : MonoBehaviour
         float randomVolume = Random.Range(0.8f, 1f);
         audioSource.PlayOneShot(kickClip, randomVolume);
 
-        // Stop previous coroutine if running to prevent stacking scale animations
         if (scaleCoroutine != null)
         {
             StopCoroutine(scaleCoroutine);
         }
         scaleCoroutine = StartCoroutine(ScaleDrum());
+
+        // === Register hit if in tutorial mode ===
+        if (activeTutorialManager != null)
+        {
+            DrumID id = GetComponent<DrumID>();
+            if (id != null)
+            {
+                string drumName = id.drumName; // Should be "kick"
+                float videoTime = (float)activeTutorialManager.GetCurrentVideoTime();
+
+                Debug.Log($"[Kick] Sending hit to TutorialManager: {drumName} at {videoTime:F2}s");
+                activeTutorialManager.RegisterHit(drumName, videoTime);
+            }
+            else
+            {
+                Debug.LogWarning("DrumID not found on kick drum!");
+            }
+        }
     }
 
     IEnumerator ScaleDrum()
     {
-        // Reset scale before animation starts
         kickDrum.localScale = originalScale;
 
         Vector3 targetScale = originalScale * scaleUpAmount;
         float elapsed = 0f;
 
-        // Scale up
         while (elapsed < scaleDuration)
         {
             kickDrum.localScale = Vector3.Lerp(originalScale, targetScale, elapsed / scaleDuration);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        kickDrum.localScale = targetScale;
 
-        // Scale down
+        kickDrum.localScale = targetScale;
         elapsed = 0f;
+
         while (elapsed < scaleDuration)
         {
             kickDrum.localScale = Vector3.Lerp(targetScale, originalScale, elapsed / scaleDuration);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        kickDrum.localScale = originalScale;
 
+        kickDrum.localScale = originalScale;
         scaleCoroutine = null;
     }
 }
